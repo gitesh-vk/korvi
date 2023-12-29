@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: relative;
+    align-items: relative;
+    justify-content: relative;
+}
+
+.container{
+    transform-style: preserve-3d;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.container .box .body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.9s ease;
+}
+
+
+
+.container .box .body .imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.container .box .body .imgContainer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .body .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.container .box:hover .body{
+    transform: rotateY(180deg);
+}
+
+.container .box .body .content div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #FE0061,#FFEB3B);
+    transform: translateZ(100px);
+}
+
+.container .box .body .content div h3{
+    letter-spacing: 1px;
+}
+
+
+
+
+/*************** New Products **************/
+
+            /*==-  New CSS  -==*/
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+
+ 
+  ul{
+    list-style:none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-weight: 300;
+    margin: 50px auto;
+    
+  }
+  ul li{
+    padding: 10px 20px;
+    margin: 5px;
+    cursor:pointer;
+    border-bottom: 2px solid #FFF;
+    transition: 0.5s linear;
+    color: #f7b527;
+    
+  }
+  
+  .list.active,
+  li:hover{
+    color: #2f3542;
+    border-bottom: 2px solid #2f3542;
+  }
+  
+  .products{
+    width: ;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    object-fit: cover;
+
+
+   
+
+  }
+
+  .item{
+    overflow: hidden;
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+
+  
+   
+    
+  }
+
+
+  .item img{
+    width: 300px;
+    height: 350px;
+    object-fit:cover;
+    cursor: pointer;
+    transition: 0.7s linear;
+
+    
+    
+  
+
